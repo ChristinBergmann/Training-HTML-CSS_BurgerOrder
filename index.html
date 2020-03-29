@@ -6,33 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="main.css">
     <title>Christin`s Burgers</title>
 </head>
 
 <body>
     <nav>
+        <ul>
+            <li>&#9993; <a href="mailto:christin-in-progress@gmail.de">christin-in-progress@gmail.de</a></li>
+            <li>&phone; (323) - 245 - 5567</li>
+        </ul>
+        <h1 style="font-size:40px">Christin`s</h1>
+        <figure>
+            <img src="images/advertisement-advertising-architecture-background-617230.jpg" width="200px" height="100px">
+        </figure>
 
     </nav>
     <header>
         <h1>Welcome to the worlds best burgers</h1>
-
     </header>
     <main>
+        <form method="POST" action="form.html">
+            <div class="meat">
+                <h3>Choose your meat: </h3>
+                <p><input type="radio" name="meat" value="chicken">Chicken</p>
+                <p><input type="radio" name="meat" value="beef">Beef</p>
+                <p><input type="radio" name="meat" value="tofu">Tofu</p>
+                <h3>How do you like your meat cooked ?</h3>
+                <p>rare <input type="range" name="cooked" min="10" max="100" step="20"> well done</p>
+            </div>
 
+            <div class="topping">
+                <h3>Choose your toppings: </h3>
+                <input type="radio" name="toppings" value="lettuce"><i class='fas fa-leaf'>Lettuce</i>
+                <input type="radio" name="toppings" value="pepper"><i class='fas fa-pepper-hot'>Pepper</i>
+                <input type="radio" name="toppings" value="tomato"><i class='fas fa-tomato'>Tomato</i>
+                <input type="radio" name="toppings" value="pickles"><i class='fas fa-cucumber'>Pickles</i>
+                <input type="radio" name="toppings" value="cheese"><i class='fas fa-cheese'>Cheese</i>
+                <input type="radio" name="toppings" value="bacon"><i class='fas fa-bacon'>Bacon</i>
+            </div>
+            <div class="sauce">
+
+            </div>
+
+            <br>
+
+            <div class="delivery">
+                Pick Up <input type="radio" value="Pick Up" name="pickUp">
+                Delivery <input type="radio" value="Delivery" name="delivery">
+            </div>
+
+            <br>
+
+            </div>
+            <div class="address-submit">
+                <label for="firstname">Firstname: </label>
+                <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]*" required>
+                <label for=" lastname">Lastname: </label>
+                <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]*" required>
+                <br>
+                <label for=" street">Street: </label>
+                <input type="text" id="street" name="street" required>
+                <label for=" zip">Zip Code: </label>
+                <input type="text" id="zip" name="zip" pattern="[0-9]{5}" required>
+                <label for="city">City: </label>
+                <input type="text" id="city" name="city" pattern="[a-zA-Z]*" required>
+                <label>Phone:
+                    (<input name="tel1" type="tel" pattern="[0-9]{3}" placeholder="###" size="3" />)-
+                    <input name="tel2" type="tel" pattern="[0-9]{3}" placeholder="###" size="3" /> -
+                    <input name="tel3" type="tel" pattern="[0-9]{4}" placeholder="####" size="4" />
+                </label>
+                <br><br>
+                <input type="submit" value="SEND ORDER">
+
+            </div>
+        </form>
     </main>
+
+
     <footer>
 
     </footer>
-
-
-
-
-
-
-
-
-
 
 </body>
 
