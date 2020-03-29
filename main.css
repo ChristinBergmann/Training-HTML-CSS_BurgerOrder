@@ -1,3 +1,54 @@
 body {
     font-family: 'Sen', sans-serif;
+    background-color: black;
+    background-size: contain;
+    color: red;
+}
+
+nav {
+    display: inline-flex;
+}
+
+nav h1,
+img {
+    float: right;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+header h1 {
+    position: relative;
+    /* margin: 50px; */
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(50deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 8s linear infinite;
+    -webkit-text-fill-color: rgba(243, 8, 8, 0.521);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+.meat {
+    box-sizing: border-box;
+    border: 4px solid #fff;
+    border-radius: 3px;
+    background-color: rgb(124, 30, 30);
+}
+
+.meat input {
+    vertical-align: middle;
 }
