@@ -28,33 +28,56 @@
     </header>
 
     <main>
+        <section class="overlay">
+            <h2>Sign Up</h2>
+            <h3>Create an account !</h3>
+            <form action="submission.html" method="GET">
+                <label for="username">Username:</label>
+                <br>
+                <input id="username" name="username" type="text" minlength="3" maxlength="15"
+                    pattern="[A-Za-z0-9]{3,15}" required>
+                <br>
+                <label for="pw">Password:</label>
+                <br>
+                <input id="pw" name="pw" type="password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]{8,15}"
+                    required>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <br>
+
         <form method="GET" action="form.html">
-            <div class="meat">
+            <section class="meat">
                 <h3>Choose your meat: </h3>
                 <p><input type="radio" name="meat" value="chicken"> Chicken</p>
                 <p><input type="radio" name="meat" value="beef"> Beef</p>
                 <p><input type="radio" name="meat" value="tofu"> Tofu</p>
                 <p><input type="radio" name="meat" value="kangerooh"> Kangerooh</p>
-
-                <h3>How do you like your meat cooked ?</h3>
-                <p>rare <input type="range" name="cooked" min="10" max="100" step="20"> well done</p>
-            </div>
+                <div class="cooked">
+                    <h3>How do you like your meat cooked ?</h3>
+                    <p>rare <input type="range" name="cooked" min="0" max="80" step="20"> well done</p>
+                </div>
+            </section>
 
             <br>
 
-            <div class="topping">
+            <section class="topping" min="1" max="3" checked>
                 <h3>Choose your toppings: </h3>
-                <input type="radio" name="toppings" value="lettuce"><i class='fas fa-leaf'> Lettuce</i>
-                <input type="radio" name="toppings" value="pepper"><i class='fas fa-pepper-hot'> Pepper</i>
-                <input type="radio" name="toppings" value="tomato"><i class='fas fa-tomato'> Tomato</i>
-                <input type="radio" name="toppings" value="pickles"><i class='fas fa-cucumber'> Pickles</i>
-                <input type="radio" name="toppings" value="cheese"><i class='fas fa-cheese'> Cheese</i>
-                <input type="radio" name="toppings" value="bacon"><i class='fas fa-bacon'> Bacon</i>
-            </div>
+                <input type="checkbox" name="toppings" value="lettuce"><i class='fas fa-leaf'> Lettuce</i>
+                <input type="checkbox" name="toppings" value="pepper"><i class='fas fa-pepper-hot'> Pepper</i>
+                <input type="checkbox" name="toppings" value="tomato"><i class='fas fa-tomato'> Tomato</i>
+                <input type="checkbox" name="toppings" value="pickles"><i class='fas fa-cucumber'> Pickles</i>
+                <input type="checkbox" name="toppings" value="onion"><i class='fas fa-onion'> Onion</i>
+                <input type="checkbox" name="toppings" value="bacon"><i class='fas fa-bacon'> Bacon</i>
+                <input type="checkbox" name="toppings" value="cheese"><i class='fas fa-cheese'> Cheese</i>
+                <input type="checkbox" name="toppings" value="mozarella"><i class='fas fa-cheese'> Mozarella</i>
+            </section>
 
             <br>
 
-            <div class="sauce">
+            <section class="sauce">
                 <label for="sauce-select">
                     <h3>Select your favorite sauce: </h3>
                 </label>
@@ -66,25 +89,25 @@
                     <option value="bbq">BBQ</option>
                     <option value="cranberry">Cranberry</option>
                 </select>
-            </div>
+            </section>
 
             <br>
 
-            <div class="comments">
-                <h3></h3>
-                <textarea rows="10" cols="30" name="comments" maxlength="100"
-                    placeholder="Leave a comment if you have a special request.." spellcheck="true"></textarea>
-            </div>
+            <section class="comments">
+                <h3>Special request? Allergies? Any feedback?</h3>
+                <textarea rows="10" cols="30" name="comments" maxlength="100" placeholder="Leave a comment.."
+                    spellcheck="true"></textarea>
+            </section>
 
-            <div class="delivery">
+            <section class="delivery">
                 <p>Pick Up <input type="radio" value="Pick Up" name="pickUp"></p>
                 <p>Delivery <input type="radio" value="Delivery" name="delivery"></p>
-            </div>
+            </section>
 
             <br>
 
             </div>
-            <!-- <div class="address-submit">
+            <section class="address-submit">
                 <label for="firstname">Firstname: </label>
                 <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]*" required>
                 <label for=" lastname">Lastname: </label>
@@ -100,19 +123,34 @@
                     (<input name="tel1" type="tel" pattern="[0-9]{3}" placeholder="###" size="3" />)-
                     <input name="tel2" type="tel" pattern="[0-9]{3}" placeholder="###" size="3" /> -
                     <input name="tel3" type="tel" pattern="[0-9]{4}" placeholder="####" size="4" />
-                </label> -->
-            <br><br>
-            <input type="submit" value="SEND ORDER">
+                </label>
+            </section>
 
-            </div>
+            <br><br>
+
+            <section class="credit-card">
+                <label for="firstname">Firstname: </label>
+                <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]*" required>
+                <br>
+                <label for=" lastname">Lastname: </label>
+                <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]*" required>
+                <br>
+                <label for="payment">Credit Card Number (no spaces):</label>
+                <br>
+                <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+            </section>
+            <input type="submit" value="SEND ORDER">
         </form>
+        <figure>
+            <img src="images/burger-with-fried-fries-on-black-plate-with-sauce-on-the-1199957.jpg" width="200px"
+                height="150px">
+        </figure>
+
     </main>
 
-
     <footer>
-
+        <p> &COPY; Christin`s Burger || 2020 </p>
     </footer>
-
 </body>
 
 </html>
