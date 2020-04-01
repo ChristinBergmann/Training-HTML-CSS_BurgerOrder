@@ -1,18 +1,22 @@
 body {
     font-family: 'Sen', sans-serif;
+    /* font-family: 'Special Elite',
+        cursive; */
     background-color: black;
     background-size: contain;
-    color: red;
+    color: rgb(204, 20, 20);
 }
 
 nav {
     display: inline-flex;
 }
 
-nav h1,
-img {
+nav h1 {
     float: right;
     font-size: 40px;
+    font-size: bold;
+    color: rgb(233, 6, 6);
+
 }
 
 nav li {
@@ -21,7 +25,6 @@ nav li {
 
 header h1 {
     position: relative;
-    /* margin: 50px; */
     text-align: center;
     font-size: 2.5em;
     letter-spacing: 4px;
@@ -30,7 +33,7 @@ header h1 {
     background-repeat: no-repeat;
     background-size: 80%;
     animation: animate 8s linear infinite;
-    -webkit-text-fill-color: rgba(243, 8, 8, 0.521);
+    -webkit-text-fill-color: rgba(204, 22, 22, 0.959);
 }
 
 @keyframes animate {
@@ -41,6 +44,13 @@ header h1 {
     100% {
         background-position: 500%;
     }
+}
+
+.logo-img {
+    -webkit-box-shadow: 5px 0px 5px 0px rgba(165, 11, 11, 0.97);
+    -moz-box-shadow: 5px 0px 5px 0px rgba(156, 12, 12, 0.97);
+    box-shadow: 5px 0px 5px 0px rgba(173, 7, 7, 0.97);
+    float: right;
 }
 
 img {
