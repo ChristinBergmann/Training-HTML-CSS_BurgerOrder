@@ -1,71 +1,80 @@
 body {
-    font-family: 'Sen', sans-serif;
-    /* font-family: 'Special Elite',
-        cursive; */
-    background-color: black;
-    background-size: contain;
-    color: rgb(204, 20, 20);
+  font-family: "Sen", sans-serif;
+  background-color: black;
+  background-size: contain;
+  color: rgb(204, 20, 20);
+  margin: 20px;
+  padding: 0px;
 }
 
 nav {
-    display: inline-flex;
-}
-
-nav h1 {
-    float: right;
-    font-size: 40px;
-    font-size: bold;
-    color: rgb(233, 6, 6);
-
+  display: inline-flex;
+  justify-content: space-evenly;
 }
 
 nav li {
-    list-style-type: none;
+  list-style-type: none;
+}
+nav :any-link {
+  color: orange;
 }
 
-header h1 {
-    position: relative;
-    text-align: center;
-    font-size: 2.5em;
-    letter-spacing: 4px;
-    overflow: hidden;
-    background: linear-gradient(50deg, #000, #fff, #000);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animate 8s linear infinite;
-    -webkit-text-fill-color: rgba(204, 22, 22, 0.959);
+.highlight-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  animation: animate 3s linear infinite;
+  -webkit-text-fill-color: rgba(204, 22, 22, 0.959);
 }
 
 @keyframes animate {
-    0% {
-        background-position: -500%;
-    }
+  0% {
+    background-position: -300%;
+  }
 
-    100% {
-        background-position: 500%;
-    }
+  100% {
+    background-position: 300%;
+  }
 }
 
 .logo-img {
-    -webkit-box-shadow: 5px 0px 5px 0px rgba(165, 11, 11, 0.97);
-    -moz-box-shadow: 5px 0px 5px 0px rgba(156, 12, 12, 0.97);
-    box-shadow: 5px 0px 5px 0px rgba(173, 7, 7, 0.97);
-    float: right;
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(165, 11, 11, 0.97);
+  -moz-box-shadow: 5px 0px 5px 0px rgba(156, 12, 12, 0.97);
+  box-shadow: 5px 0px 5px 0px rgba(173, 7, 7, 0.97);
 }
 
 img {
-    border-radius: 5%;
+  border-radius: 5%;
 }
 
 input {
-    vertical-align: middle;
-    border-style: dotted;
-    border-radius: 5%;
+  vertical-align: middle;
+  border-style: dotted;
+  border-radius: 5%;
+}
+
+.sign-up {
+}
+
+.frame-box {
+  box-sizing: content-box;
+  border-style: dotted;
 }
 
 .cooked {
-    box-sizing: border-box;
-    border: 4px solid #fff;
-    border-radius: 3px;
-    background-color: rgb(219, 128, 128);
+  box-sizing: border-box;
+  border: 4px solid #fff;
+  border-radius: 3px;
+  background-color: rgb(219, 128, 128);
 }
