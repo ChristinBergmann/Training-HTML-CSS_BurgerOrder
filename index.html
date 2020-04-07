@@ -32,29 +32,31 @@
     </header>
 
     <main>
+        <div class="sign-up">
+            <section>
+                <h2>Sign Up</h2>
+                <h3>Create an account !</h3>
+                <form action="submission.html" method="POST" name="login" data-netlify="true">
+                    <label for="username">Username:</label>
+                    <br>
+                    <input id="username" name="username" type="text" minlength="3" maxlength="15"
+                        pattern="[A-Za-z0-9]{3,15}" required>
+                    <br>
+                    <label for="pw">Password:</label>
+                    <br>
+                    <input id="pw" name="pw" type="password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]{8,15}"
+                        required>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
 
-        <section class="sign-up">
-            <h2>Sign Up</h2>
-            <h3>Create an account !</h3>
-            <form action="submission.html" method="GET">
-                <label for="username">Username:</label>
-                <br>
-                <input id="username" name="username" type="text" minlength="3" maxlength="15"
-                    pattern="[A-Za-z0-9]{3,15}" required>
-                <br>
-                <label for="pw">Password:</label>
-                <br>
-                <input id="pw" name="pw" type="password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]{8,15}"
-                    required>
-                <br>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+        </div>
 
         <br>
 
         <div class="frame-box">
-            <form method="POST" action="form.html">
+            <form action="form.html" method="POST" name="order" data-netlify="true">
                 <section class="meat">
                     <h3>Choose your meat: </h3>
                     <p><input type="radio" name="meat" value="chicken"> Chicken</p>
