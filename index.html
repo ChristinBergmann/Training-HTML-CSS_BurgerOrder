@@ -19,41 +19,42 @@
             <li>&#9993; <a href="mailto:christin-in-progress@gmail.de">christin-in-progress@gmail.de</a></li>
             <li>&phone; (323) - 245 - 5567</li>
         </ul>
-        <figure>
-            <img src="images/advertisement-advertising-architecture-background-617230.jpg" width="200px" height="100px"
-                class="logo-img">
-        </figure>
+
+        <section>
+            <h2>Sign Up</h2>
+            <h3>Create an account !</h3>
+            <form action="submission.html" method="POST" name="login" data-netlify="true">
+                <label for="username">Username:</label>
+                <br>
+                <input id="username" name="username" type="text" minlength="3" maxlength="15"
+                    pattern="[A-Za-z0-9]{3,15}" required>
+                <br>
+                <label for="pw">Password:</label>
+                <br>
+                <input id="pw" name="pw" type="password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]{8,15}"
+                    required>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
     </nav>
+
+    <br>
 
     <header>
         <div class="highlight-header">
-            <h1>Welcome to the worlds best burgers</h1>
+            <h1>Welcome to the worlds best..</h1>
+            <figure>
+                <img src="images/advertisement-advertising-architecture-background-617230.jpg" width="200px"
+                    height="100px" class="logo-img">
+            </figure>
+
         </div>
     </header>
 
+    <br><br>
+
     <main>
-        <div class="sign-up">
-            <section>
-                <h2>Sign Up</h2>
-                <h3>Create an account !</h3>
-                <form action="submission.html" method="POST" name="login" data-netlify="true">
-                    <label for="username">Username:</label>
-                    <br>
-                    <input id="username" name="username" type="text" minlength="3" maxlength="15"
-                        pattern="[A-Za-z0-9]{3,15}" required>
-                    <br>
-                    <label for="pw">Password:</label>
-                    <br>
-                    <input id="pw" name="pw" type="password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]{8,15}"
-                        required>
-                    <br>
-                    <input type="submit" value="Submit">
-                </form>
-            </section>
-
-        </div>
-
-        <br>
 
         <div class="frame-box">
             <form action="form.html" method="POST" name="order" data-netlify="true">
@@ -113,52 +114,59 @@
                 </section>
         </div>
 
-        <br>
-
-        </div>
-        <section class="address-submit">
-            <label for="firstname">Firstname: </label>
-            <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]*" required>
-            <label for=" lastname">Lastname: </label>
-            <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]*" required>
-            <br>
-            <label for=" street">Street: </label>
-            <input type="text" id="street" name="street" required>
-            <label for=" zip">Zip Code: </label>
-            <input type="text" id="zip" name="zip" pattern="[0-9]{5}" required>
-            <label for="city">City: </label>
-            <input type="text" id="city" name="city" pattern="[a-zA-Z]*" required>
-            <label>Phone:
-                (<input name="tel1" type="tel" pattern="[0-9]{3}" placeholder="###" size="3" />)-
-                <input name="tel2" type="tel" pattern="[0-9]{3}" placeholder="###" size="3" /> -
-                <input name="tel3" type="tel" pattern="[0-9]{4}" placeholder="####" size="4" />
-            </label>
-        </section>
-
         <br><br>
 
-        <section class="credit-card">
-            <label for="firstname">Firstname: </label>
-            <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]*" required>
-            <br>
-            <label for=" lastname">Lastname: </label>
-            <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]*" required>
-            <br>
-            <label for="payment">Credit Card Number (no spaces):</label>
-            <br>
-            <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
-        </section>
-        <input type="submit" value="SEND ORDER">
-        </form>
+        <div class="address-payment">
+            <section class="address-submit">
+                <label for="firstname">Firstname: </label>
+                <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]*" required>
+                <br>
+                <label for=" lastname">Lastname: </label>
+                <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]*" required>
+                <br>
+                <label for=" street">Street: </label>
+                <input type="text" id="street" name="street" required>
+                <br>
+                <label for=" zip">Zip Code: </label>
+                <input type="text" id="zip" name="zip" pattern="[0-9]{5}" required>
+                <br>
+                <label for="city">City: </label>
+                <input type="text" id="city" name="city" pattern="[a-zA-Z]*" required>
+                <br>
+                <label>Phone:
+                    (<input name="tel1" type="tel" pattern="[0-9]{3}" placeholder="###" size="3" />)-
+                    <input name="tel2" type="tel" pattern="[0-9]{3}" placeholder="###" size="3" /> -
+                    <input name="tel3" type="tel" pattern="[0-9]{4}" placeholder="####" size="4" />
+                </label>
+            </section>
+
+            <section class="credit-card">
+                <label for="firstname">Firstname: </label>
+                <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]*" required>
+                <br>
+                <label for=" lastname">Lastname: </label>
+                <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]*" required>
+                <br>
+                <label for="payment">Credit Card Number (no spaces):</label>
+                <br>
+                <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+            </section>
+
+            <input class="send-btn" type="submit" value="SEND ORDER">
+            </form>
+        </div>
+
+    </main>
+
+    <br><br>
+
+    <footer>
+        <p> &COPY; Christin`s Burger || 2020 </p>
         <figure>
             <img src="images/burger-with-fried-fries-on-black-plate-with-sauce-on-the-1199957.jpg" width="200px"
                 height="150px">
         </figure>
 
-    </main>
-
-    <footer>
-        <p> &COPY; Christin`s Burger || 2020 </p>
     </footer>
 </body>
 
