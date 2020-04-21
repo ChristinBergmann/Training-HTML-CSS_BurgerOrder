@@ -20,9 +20,11 @@
             <li>&phone; (323) - 245 - 5567</li>
         </ul>
 
-        <section>
-            <h2>Sign Up</h2>
-            <h3>Create an account !</h3>
+        <section class="sign-up">
+            <div>
+                <h2>Sign Up</h2>
+                <h3>Create an account !</h3>
+            </div>
             <form action="submission.html" method="POST" name="login" data-netlify="true">
                 <label for="username">Username:</label>
                 <br>
@@ -55,116 +57,120 @@
     <br><br>
 
     <main>
+        <form action="form.html" method="POST" name="order" data-netlify="true">
 
-        <div class="frame-box">
-            <form action="form.html" method="POST" name="order" data-netlify="true">
-                <section class="meat">
-                    <h3>Choose your meat: </h3>
-                    <p><input type="radio" name="meat" value="chicken"> Chicken</p>
-                    <p><input type="radio" name="meat" value="beef"> Beef</p>
-                    <p><input type="radio" name="meat" value="tofu"> Tofu</p>
-                    <p><input type="radio" name="meat" value="kangerooh"> Kangerooh</p>
-                    <div class="cooked">
-                        <h3>How do you like your meat cooked ?</h3>
-                        <p>rare <input type="range" name="cooked" min="0" max="80" step="20"> well done</p>
-                    </div>
-                </section>
+            <div class="frame">
+                <div class="frame-box">
+                    <section class="meat">
+                        <h3>Choose your meat: </h3>
+                        <p><input type="radio" name="meat" value="chicken"> Chicken</p>
+                        <p><input type="radio" name="meat" value="beef"> Beef</p>
+                        <p><input type="radio" name="meat" value="tofu"> Tofu</p>
+                        <p><input type="radio" name="meat" value="kangerooh"> Kangerooh</p>
+                        <div class="cooked">
+                            <h3>How do you like your meat cooked ?</h3>
+                            <p>rare <input type="range" name="cooked" min="0" max="80" step="20"> well done</p>
+                        </div>
+                    </section>
 
-                <br>
+                    <br>
 
-                <section class="topping" min="1" max="3" checked>
-                    <h3>Choose your toppings: </h3>
-                    <input type="checkbox" name="toppings" value="lettuce"><i class='fas fa-leaf'> Lettuce</i>
-                    <input type="checkbox" name="toppings" value="pepper"><i class='fas fa-pepper-hot'> Pepper</i>
-                    <input type="checkbox" name="toppings" value="tomato"><i class='fas fa-tomato'> Tomato</i>
-                    <input type="checkbox" name="toppings" value="pickles"><i class='fas fa-cucumber'> Pickles</i>
-                    <input type="checkbox" name="toppings" value="onion"><i class='fas fa-onion'> Onion</i>
-                    <input type="checkbox" name="toppings" value="bacon"><i class='fas fa-bacon'> Bacon</i>
-                    <input type="checkbox" name="toppings" value="cheese"><i class='fas fa-cheese'> Cheese</i>
-                    <input type="checkbox" name="toppings" value="mozarella"><i class='fas fa-cheese'> Mozarella</i>
-                </section>
+                    <section class="topping" min="1" max="3" checked>
+                        <h3>Choose your toppings: </h3>
+                        <input type="checkbox" name="toppings" value="lettuce"><i class='fas fa-leaf'> Lettuce</i>
+                        <input type="checkbox" name="toppings" value="pepper"><i class='fas fa-pepper-hot'> Pepper</i>
+                        <input type="checkbox" name="toppings" value="tomato"><i class='fas fa-tomato'> Tomato</i>
+                        <input type="checkbox" name="toppings" value="pickles"><i class='fas fa-cucumber'> Pickles</i>
+                        <input type="checkbox" name="toppings" value="onion"><i class='fas fa-onion'> Onion</i>
+                        <input type="checkbox" name="toppings" value="bacon"><i class='fas fa-bacon'> Bacon</i>
+                        <input type="checkbox" name="toppings" value="cheese"><i class='fas fa-cheese'> Cheese</i>
+                        <input type="checkbox" name="toppings" value="mozarella"><i class='fas fa-cheese'> Mozarella</i>
+                    </section>
 
-                <br>
+                    <br>
 
-                <section class="sauce">
-                    <label for="sauce-select">
-                        <h3>Select your favorite sauce: </h3>
-                    </label>
-                    <p>( You may control-click (Windows) or command-click (Mac) to select more than one )</p>
-                    <select id="sauce-select" name="sauce" multiple size="2">
-                        <option value="ketchup">Ketchup</option>
-                        <option value="mayo">Mayonaise</option>
-                        <option value="honey">Honey-Mustard</option>
-                        <option value="bbq">BBQ</option>
-                        <option value="cranberry">Cranberry</option>
-                    </select>
-                </section>
+                    <section class="sauce">
+                        <label for="sauce-select">
+                            <h3>Select your favorite sauce: </h3>
+                        </label>
+                        <p>( You may control-click (Windows) or command-click (Mac) to select more than one )</p>
+                        <select id="sauce-select" name="sauce" multiple size="2">
+                            <option value="ketchup">Ketchup</option>
+                            <option value="mayo">Mayonaise</option>
+                            <option value="honey">Honey-Mustard</option>
+                            <option value="bbq">BBQ</option>
+                            <option value="cranberry">Cranberry</option>
+                        </select>
+                    </section>
 
-                <br>
+                    <br>
 
-                <section class="comments">
-                    <h3>Special request? Allergies? Any feedback?</h3>
-                    <textarea rows="10" cols="30" name="comments" maxlength="100" placeholder="Leave a comment.."
-                        spellcheck="true"></textarea>
-                </section>
+                    <section class="comments">
+                        <h3>Special request? Allergies? Any feedback?</h3>
+                        <textarea rows="10" cols="30" name="comments" maxlength="100" placeholder="Leave a comment.."
+                            spellcheck="true"></textarea>
+                    </section>
 
-                <section class="delivery">
-                    <p>Pick Up <input type="radio" value="Pick Up" name="pickUp"></p>
-                    <p>Delivery <input type="radio" value="Delivery" name="delivery"></p>
-                </section>
-        </div>
+                    <section class="delivery">
+                        <p>Pick Up <input type="radio" value="Pick Up" name="pickUp"></p>
+                        <p>Delivery <input type="radio" value="Delivery" name="delivery"></p>
+                    </section>
 
-        <br><br>
+                </div>
+            </div>
 
-        <div class="address-payment">
-            <section class="address-submit">
-                <label for="firstname">Firstname: </label>
-                <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]*" required>
-                <br>
-                <label for=" lastname">Lastname: </label>
-                <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]*" required>
-                <br>
-                <label for=" street">Street: </label>
-                <input type="text" id="street" name="street" required>
-                <br>
-                <label for=" zip">Zip Code: </label>
-                <input type="text" id="zip" name="zip" pattern="[0-9]{5}" required>
-                <br>
-                <label for="city">City: </label>
-                <input type="text" id="city" name="city" pattern="[a-zA-Z]*" required>
-                <br>
-                <label>Phone:
+            <br><br>
+
+
+            <div class="address-payment">
+                <figure>
+                    <img class="burger-img"
+                        src="images/burger-with-fried-fries-on-black-plate-with-sauce-on-the-1199957.jpg" width="200px"
+                        height="150px">
+                </figure>
+
+                <section class="address-submit">
+                    <label for="firstname">Firstname: </label>
+                    <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]*" required>
+                    <br>
+                    <label for=" lastname">Lastname: </label>
+                    <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]*" required>
+                    <br>
+                    <label for=" street">Street: </label>
+                    <input type="text" id="street" name="street" required>
+                    <br>
+                    <label for=" zip">Zip Code: </label>
+                    <input type="text" id="zip" name="zip" pattern="[0-9]{5}" required>
+                    <br>
+                    <label for="city">City: </label>
+                    <input type="text" id="city" name="city" pattern="[a-zA-Z]*" required>
+                    <br>
+                    <label>Phone: </label>
                     (<input name="tel1" type="tel" pattern="[0-9]{3}" placeholder="###" size="3" />)-
                     <input name="tel2" type="tel" pattern="[0-9]{3}" placeholder="###" size="3" /> -
                     <input name="tel3" type="tel" pattern="[0-9]{4}" placeholder="####" size="4" />
-                </label>
-            </section>
+                </section>
 
-            <section class="credit-card">
-                <label for="firstname">Firstname: </label>
-                <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]*" required>
-                <br>
-                <label for=" lastname">Lastname: </label>
-                <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]*" required>
-                <br>
-                <label for="payment">Credit Card Number (no spaces):</label>
-                <br>
-                <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
-            </section>
+                <section class="credit-card">
+                    <label for="firstname">Firstname: </label>
+                    <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]*" required>
+                    <br>
+                    <label for=" lastname">Lastname: </label>
+                    <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]*" required>
+                    <br>
+                    <label for="payment">Credit Card Number (no spaces):</label>
+                    <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+                </section>
 
-            <input class="send-btn" type="submit" value="SEND ORDER">
-            </form>
-        </div>
+                <input class="send-btn" type="submit" value="SEND ORDER">
+            </div>
+        </form>
 
     </main>
 
     <br><br>
 
     <footer>
-        <figure>
-            <img src="images/burger-with-fried-fries-on-black-plate-with-sauce-on-the-1199957.jpg" width="200px"
-                height="150px">
-        </figure>
         <p> &COPY; Christin`s Burger || 2020 </p>
     </footer>
 </body>
