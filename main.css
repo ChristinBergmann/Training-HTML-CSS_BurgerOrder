@@ -1,6 +1,4 @@
 * {
-  margin: 0px;
-  padding: 0px;
 }
 
 body {
@@ -8,11 +6,8 @@ body {
   background-color: black;
   background-size: contain;
   color: rgb(204, 20, 20);
-<<<<<<< HEAD
-=======
   margin: 0px;
   padding: 0px;
->>>>>>> f96ec4a764bdfc9538528daf6acef60e822123d1
 }
 
 nav {
@@ -20,21 +15,6 @@ nav {
   justify-content: space-between;
   margin: 30px;
 }
-
-/* nav li {
-  list-style-type: none;
-}
-nav :any-link {
-  color: orange;
-<<<<<<< HEAD
-} */
-=======
-}
-
-nav section {
-  padding-inline-end: 40px;
-}
->>>>>>> f96ec4a764bdfc9538528daf6acef60e822123d1
 
 .highlight-header {
   display: flex;
@@ -102,11 +82,7 @@ label {
   justify-content: center;
   max-width: fit-content;
   border-style: dotted;
-<<<<<<< HEAD
   margin: 0 auto;
-=======
-  margin: 0px;
->>>>>>> f96ec4a764bdfc9538528daf6acef60e822123d1
 }
 .frame-box {
   padding: 20px;
@@ -153,12 +129,9 @@ footer {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-<<<<<<< HEAD
 footer :any-link {
   color: orange;
 }
-=======
->>>>>>> f96ec4a764bdfc9538528daf6acef60e822123d1
 footer p {
   padding: 10px;
 }
